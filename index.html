@@ -16,7 +16,19 @@
 			</div>
 			
 <header id="header" class="l-h cf">
-
+<script type="text/javascript">
+$(document).ready(function () {
+    //Disable cut copy paste
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+   
+    //Disable mouse right click
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+});
+</script>
 			<div class="section-wrapper cf">
 	<div class="section-wrapper-content cf"><div wn-border-element="section" class="s section header header-01 cf design-20 sc-m wnd-background-pattern">
 	<div class="section-bg s-bg">
